@@ -1,0 +1,15 @@
+{
+  "name": "afrilink-workspace",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend/frontoffice",
+    "frontend/backoffice"
+  ],
+  "scripts": {
+    "bootstrap": "pnpm install",
+    "dev:backend": "pnpm --filter backend dev",
+    "dev:frontoffice": "pnpm --filter afrilink-frontoffice dev",
+    "dev:backoffice": "pnpm --filter afrilink-backoffice dev"
+  }
+}
